@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-frontend
+  labels:
+    run: my-app-frontend
+spec:
+  ports:
+  - port: 8100
+    protocol: TCP
+  selector:
+    run: my-app-frontend
